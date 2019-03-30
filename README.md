@@ -1,6 +1,7 @@
-# clojurebridge-web-intro
+# ClojureBridge Web app example
 
-FIXME
+An example web application for ClojureBridge that uses
+[Hiccup](https://github.com/weavejester/hiccup) for html templating.
 
 ## Prerequisites
 
@@ -16,4 +17,4 @@ To start a web server for the application, run:
 
 ## License
 
-Copyright © 2019 FIXME
+Copyright © 2019 Yrjö Kari-Koskinen
