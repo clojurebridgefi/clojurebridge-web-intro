@@ -5,8 +5,10 @@
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [compojure "1.6.1"]
                  [ring/ring-defaults "0.3.2"]
-                 [hiccup "1.0.5"]]
+                 [hiccup "1.0.5"]
+                 [ring/ring-jetty-adapter "1.7.1"]]
   :plugins [[lein-ring "0.12.5"]]
+  :main ^:skip-aot clojurebridge-web-intro.handler
   :ring {:handler clojurebridge-web-intro.handler/app}
   :profiles
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]

@@ -2,6 +2,7 @@
   (:require [compojure.core :refer :all]
             [hiccup.core :refer [html]]
             [compojure.route :as route]
+            [ring.adapter.jetty :as jetty]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
             [ring.middleware.resource :refer [wrap-resource]]))
 
@@ -34,3 +35,7 @@
   (-> app-routes
     (wrap-defaults site-defaults)
     (wrap-resource "public")))
+
+(defn -main [& args]
+  (jetty/run-jetty app {:port 3000}))
+
