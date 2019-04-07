@@ -37,5 +37,5 @@
     (wrap-resource "public")))
 
 (defn -main [& args]
-  (jetty/run-jetty app {:port 3000}))
+  (jetty/run-jetty #'app {:port 3000 :join? false}))
 
