@@ -18,3 +18,5 @@ To start a web server for the application, run:
 ## License
 
 Copyright © 2019 Yrjö Kari-Koskinen
+
+Distributed under the [Eclipse Public License](LICENSE) either version 1.0 or (at your option) any later version.
